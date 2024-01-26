@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;  
+    box-sizing: border-box;  
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+ 
+.main{    
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;   
+    width: 100%;
+    padding:50px 50px;       
+    background-color: rgb(255, 255, 255,0.25);         
+}
+
+.outer-box{ 
+    height: 90%;
+    width: 90%;    
+    background-color: white; 
+    border-radius: 10px;  
+    overflow: hidden; 
+}
+.outer-head{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between; 
+        padding: 0px 5%;      
+        width: 100%; 
+        height: 100px;
+        background-color: rgb(36, 99, 36); 
+}
+
+.startButton{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height:40px;
+    width:60px;
+    background-color: white;
+    border-radius: 8px;   
+    color: black;  
+    font-size: 1rem;
+    font-weight: 600; 
+    box-shadow: 3px 3px rgb(2, 50, 2); 
+}
+.startButton:hover{
+    cursor: pointer;   
+    box-shadow: 0px 0px;   
+}
+
+#timeInput{
+    height: 40px;
+    width:60px; 
+    font-size: 1.3rem; 
+    border-radius: 5px;
+    margin-left: 10px;  
+}
+.outer-content{
+    display: flex; 
+    align-items: center; 
+    color: white; 
+    font-size: 1.8rem; 
+    font-weight: 600;  
+     
+}
+
+.data-box{
+    background-color: white;
+    color: black;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;    
+    height: 40px;
+    width: 40px;   
+    border-radius: 5px; 
+    margin:0px 20px;  
+}
+
+.bubble-container{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;   
+    flex-wrap: wrap; 
+     
+    width: 100%;  
+    height: 480px;                     
+    padding: 10px 10px; 
+    background-color: #000;  
+}
+
+#scoreStamp{
+    width:60px; 
+}
+.bubble-box{ 
+
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;   
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.25);   
+    color: white; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1.5rem; 
+    font-weight: 600;   
+}
+
+.bubble-box span{
+    inset:10px;
+    border-left: 15px solid #0fb4ff;
+    filter:blur(8px);  
+}
+
+.bubble-box:hover{
+    background-color: green; 
+    cursor: pointer; 
+}
